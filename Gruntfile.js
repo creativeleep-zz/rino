@@ -207,8 +207,8 @@ module.exports = function (grunt) {
         src: [
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
           '<%= yeoman.dist %>/styles/{,*/}*.css',
-          '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-          '<%= yeoman.dist %>/styles/fonts/*'
+          '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+          // '<%= yeoman.dist %>/styles/fonts/*'
         ]
       }
     },
@@ -341,7 +341,9 @@ module.exports = function (grunt) {
             '*.html',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
-            'fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'styles/{,*/}*.*',
+            'scripts/{,*/}*.*'
           ]
         }, {
           expand: true,
@@ -362,6 +364,7 @@ module.exports = function (grunt) {
         src: '{,*/}*.css'
       }
     },
+
 
     // Run some tasks in parallel to speed up the build process
     concurrent: {
