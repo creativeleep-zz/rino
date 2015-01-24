@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: ServicesCtrl', function () {
+describe('Controller: ContactCtrl', function () {
 
   // load the controller's module
   beforeEach(module('rinoApp'));
 
-  var ServicesCtrl,
+  var ContactCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    ServicesCtrl = $controller('ServicesCtrl', {
+    ContactCtrl = $controller('ContactCtrl', {
       $scope: scope
     });
   }));

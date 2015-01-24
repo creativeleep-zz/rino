@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name rinoApp.controller:ServicesCtrl
+ * @name rinoApp.controller:AboutCtrl
  * @description
- * # ServicesCtrl
+ * # AboutCtrl
  * Controller of the rinoApp
  */
 angular.module('rinoApp')
-  .controller('ServicesCtrl', function ($scope) {
+  .controller('InstallationCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

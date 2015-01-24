@@ -17,24 +17,22 @@
   </head>
   <body ng-app="rinoApp">
     <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li><a ng-href="#/">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#/services">Services</a></li>
+        <ul class="nav nav-pills">
+          <li><a ng-href="#/installation">Installation</a></li>
+          <li><a ng-href="#/materials">Materials</a></li>
           <li><a ng-href="#/gallery">Gallery</a></li>
           <li><a ng-href="#">Contact</a></li>
         </ul>
-        <h3 class="text-muted"><img src="images/rino-logo.png" alt="" /></h3>
+        <h3 class="text-muted"><a href="#/"><img src="images/rino-logo.png" alt="" /></a></h3>
       </div>
 
 
-      <div ng-view=""></div>
+      <div ng-view="" class="content"></div>
 
       <div class="footer">
         <p><span class="glyphicon glyphicon-barcode"></span> Design and Developed by CreativeLeep.</p>
@@ -80,9 +78,10 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/services.js"></script>
+        <script src="scripts/controllers/installation.js"></script>
+        <script src="scripts/controllers/materials.js"></script>
         <script src="scripts/controllers/gallery.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
         <!-- endbuild -->
 </body>
 </html>
