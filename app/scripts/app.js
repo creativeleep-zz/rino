@@ -9,7 +9,19 @@
  * Main module of the application.
  */
 angular
-  .module('rinoApp', ['ngAnimate', 'ngAria', 'ngCookies', 'ngMessages', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'ui.bootstrap', 'ngGridPanel'])
+  .module('rinoApp', [
+    'ngAnimate',
+    'ngAria',
+    'ngCookies',
+    'ngMessages',
+    'ngResource',
+    'ngRoute',
+    'ngSanitize',
+    'ngTouch',
+    'ui.bootstrap',
+    'angular-loading-bar',
+    'bootstrapLightbox'
+  ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

@@ -1,18 +1,12 @@
 <div class="marketing content-pages">
 
-  <grid-panel repeat="item in items" on-panel-opened="panelIsOpened(item)" on-panel-closed="panelIsClosed(item)">
-    <grid-panel-item>
-      <div>
-        Grid item template
-        {{ item.name }}
-      </div>
-    </grid-panel-item>
-    <grid-panel-content>
-      <div>
-        Opening panel template
-        Opened: {{ item.name }}
-      </div>
-    </grid-panel-content>
-  </grid-panel>
+  <ul id="gallery" ng-controller="GalleryCtrl">
+    <li ng-repeat="image in images">
+      <a ng-click="openLightboxModal($index)">
+        <img ng-src="{{image.thumbUrl}}" class="img-thumbnail" alt="">
+      </a>
+    </li>
+  </ul>
 
+  
 </div>
