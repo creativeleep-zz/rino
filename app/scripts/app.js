@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('rinoApp', ['ngAnimate', 'ngAria', 'ngCookies', 'ngMessages', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'ui.bootstrap'])
+  .module('rinoApp', ['ngAnimate', 'ngAria', 'ngCookies', 'ngMessages', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'ui.bootstrap', 'ngGridPanel'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -35,4 +35,5 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+
   });

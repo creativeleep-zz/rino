@@ -1,3 +1,141 @@
-<div class="row marketing content-pages">
-  <p>This is the materials view.</p>
+<div class="marketing content-pages">
+
+  <div class="selectors row">
+    <div class="col-sm-4 col-xs-4 materials-dropdown">
+      <h3>Material Types</h3>
+        <div ng-controller="MaterialsCtrl">
+          <!-- Single button -->
+          <div class="materials-btn btn-group" dropdown is-open="status.isopen">
+            <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+              show <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Vinyl</a></li>
+              <li><a href="#">Wood</a></li>
+              <li><a href="#">Fiberglass</a></li>
+              <li><a href="#">Composite Wood</a></li>
+              <li><a href="#">Clad-Aluminum</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-4 col-xs-4 materials-dropdown">
+      <h3>Window Types</h3>
+        <div ng-controller="MaterialsCtrl">
+          <!-- Single button -->
+          <div class="materials-btn btn-group" dropdown is-open="status.isopen">
+            <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+              show <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Slide</a></li>
+              <li><a href="#">Hung</a></li>
+              <li><a href="#">Casement</a></li>
+              <li><a href="#">Bay</a></li>
+              <li><a href="#">Bow</a></li>
+              <li><a href="#">Awning</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-4 col-xs-4 materials-dropdown">
+      <h3>Door Types</h3>
+        <div ng-controller="MaterialsCtrl">
+          <!-- Single button -->
+          <div class="materials-btn btn-group" dropdown is-open="status.isopen">
+            <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+              show <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Sliding</a></li>
+              <li><a href="#">French</a></li>
+              <li><a href="#">Entry Door</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <h4>Replacement Vinyl Windows</h4>
+    Superior vinyl frame
+    Superior components
+    Mid-priced
+    Multiple energy efficient options
+    Aesthetic options include multiple colors
+    Maintenance free
+    Lifetime warranty
+
+
+  <h4>Wood Windows</h4>
+    Pine wood frame
+    Primed wood exterior
+    Energy efficient options
+    Aesthetic options
+    Must stain or paint
+    Factory stain and paint available
+    Limited warranty
+
+
+  <h4>Fiberglass Windows</h4>
+    Thin fibers of glass forming woven layers creating reinforcement and strength
+    Rigid
+    Mid-high priced
+    Maintenance free
+    Available to paint
+    Lifetime warranty
+
+
+  <h4>Wood Clad-Aluminum</h4>
+    Cladding refers wrapping one material around another.
+
+    Pine inside (other wood options available)
+    Aluminum maintenance free exterior
+    Multiple exterior colors include brown, green, red, black
+    Energy efficient options
+    Must stain or paint
+    Factory stain and paint available
+    Limited warranty
+
+  <h4>Wood Clad-Fiberglass</h4>
+    Cladding refers wrapping one material around another.
+
+    Fir inside (other wood options available)
+    Fiberglass maintenance free exterior
+    Multiple exterior colors include brown, green, red, black
+    Energy efficient options
+    Must stain or paint
+    Lifetime warranty
+
+  <br><br>
+  <hr>
+
+  <div class="row vendors">
+    <h2 class="col-sm-12 col-xs-12">We carry the following brands:</h2>
+
+    <div class="col-sm-6 col-xs-12 logo-block">
+      <img src="../images/amerimax.jpg" alt="Amerimax" />
+    </div>
+    <div class="col-sm-6 col-xs-12 logo-block">
+      <img src="../images/jeldwen.jpg" alt="Jeldwen" />
+    </div>
+
+    <div class="col-sm-6 col-xs-12 logo-block">
+      <img src="../images/kensington.jpg" alt="Kensington" />
+    </div>
+    <div class="col-sm-6 col-xs-12 logo-block">
+      <img src="../images/sunrise.jpg" alt="Sunrise" />
+    </div>
+
+    <div class="col-sm-4 col-xs-12 logo-block">
+      <img src="../images/pella.jpg" alt="Pella" />
+    </div>
+    <div class="col-sm-4 col-xs-12 logo-block">
+      <img src="../images/milgard.jpg" alt="Milgard" />
+    </div>
+    <div class="col-sm-4 col-xs-12 logo-block">
+      <img src="../images/andersen.jpg" alt="Andersen" />
+    </div>
+
+  </div>
+
 </div>

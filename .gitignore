@@ -1,6 +1,8 @@
-node_modules
-dist
 .tmp
 .sass-cache
-bower_components
 .DS_Store
+bower_components
+dist
+node_modules
+assets
+test
