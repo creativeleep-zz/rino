@@ -1,12 +1,12 @@
 <div class="marketing content-pages">
 
-  <ul id="gallery" ng-controller="GalleryCtrl">
-    <li ng-repeat="image in images">
+  <ul id="gallery" ng-controller="GalleryCtrl" class="row">
+    <li ng-repeat="image in images" class="col-sm-4 col-xs-6">
       <a ng-click="openLightboxModal($index)">
         <img ng-src="{{image.thumbUrl}}" class="img-thumbnail" alt="">
       </a>
     </li>
   </ul>
 
-  
+
 </div>
