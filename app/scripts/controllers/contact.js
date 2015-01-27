@@ -16,9 +16,9 @@ angular.module('rinoApp')
       var returnString = '';
       for (var d in data){
         if (data.hasOwnProperty(d)) {
-        returnString += d + '=' + data[d] + '&';
-      }}
-      // Remove last ampersand and return
+          returnString += d + '=' + data[d] + '&';
+        }
+      }
       return returnString.slice( 0, returnString.length - 1 );
     };
     $scope.submitForm = function() {
