@@ -24,12 +24,15 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div class="header">
+      <div class="header" ng-controller="MainCtrl">
+        <div class="phone">
+          <a href="tel:3038093957">303.809.3957</a>
+        </div>
         <ul class="nav nav-pills">
-          <li><a ng-href="#/installation">Installation</a></li>
-          <li><a ng-href="#/materials">Materials</a></li>
-          <li><a ng-href="#/gallery">Gallery</a></li>
-          <li><a ng-href="#/contact">Contact</a></li>
+          <li ng-class="{active:isActive('/installation')}"><a ng-href="#/installation">Installation</a></li>
+          <li ng-class="{active:isActive('/materials')}"><a ng-href="#/materials">Materials</a></li>
+          <li ng-class="{active:isActive('/gallery')}"><a ng-href="#/gallery">Gallery</a></li>
+          <li ng-class="{active:isActive('/contact')}"><a ng-href="#/contact">Contact</a></li>
         </ul>
         <h3 class="text-muted"><a href="#/"><img src="images/rino-logo.png" alt="" /></a></h3>
       </div>
@@ -38,7 +41,7 @@
       <div ng-view="" class="content"></div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-barcode"></span> Design and Developed by CreativeLeep.</p>
+        <p><span class="glyphicon glyphicon-barcode"></span> Design and Developed by <a href="http://creativeleep.com/">CreativeLeep</a>.</p>
       </div>
     </div>
 
@@ -50,7 +53,7 @@
        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
+       ga('create', 'UA-59161787-1');
        ga('send', 'pageview');
     </script>
 
@@ -89,5 +92,6 @@
         <script src="scripts/controllers/gallery.js"></script>
         <script src="scripts/controllers/contact.js"></script>
         <!-- endbuild -->
+
 </body>
 </html>

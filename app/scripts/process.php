@@ -20,19 +20,30 @@ if ( ! empty($errors)) {
   $data['success'] = true;
   $data['messageSuccess'] = 'Hey! Thanks for reaching out. I will get back to you soon';
   // CHANGE THE TWO LINES BELOW
-  $email_to = "creativeleep@gmail.com";
-  $email_subject = "quote request from website";
+
+
+  $to = "rino@rinoremodeling.com";
+  $subject = "Website QUOTE request";
+
   $name = $_POST['name']; // required
-  $email_from = $_POST['email']; // required
+  $from = $_POST['email']; // required
   $message = $_POST['message']; // required
-  $email_message = "Form details below.nn";
-  $email_message .= "Name: ".$name."n";
-  $email_message .= "Email: ".$email_from."n";
-  $email_message .= "Message: ".$message."n";
-  $headers = 'From: '.$email_from."rn".
-  'Reply-To: '.$email_from."rn" .
-  'X-Mailer: PHP/' . phpversion();
-  @mail($email_to, $email_subject, $email_message, $headers);
+
+
+  $message = "From: ".$_POST['name']."\n";
+  $message .= "Email: ".$_POST['email']."\n";
+  $message .= "Message: ".$_POST['message']."\n";
+
+
+  $headers = "From: " . $name. "\n";
+  $headers .= "To: " . $to. "\n";
+  $headers .= "Reply-To: ".$from. "\n";
+  $headers .= "MIME-Version: 1.0\n";
+  $headers .= "Content-Type: text/html; charset=ISO-8859-1\n";
+
+
+
+  @mail($to, $subject, $message);
 }
 // return all our data to an AJAX call
 echo json_encode($data);
